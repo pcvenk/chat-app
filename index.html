@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Chatapp</title>
+    <script src="https://gistcdn.githack.com/jawache/623252aff4aeaa2f37710e43df25b1f2/raw/b90bb97e41af41930c3a8c16d18e8c2d8c217f21/parse.1.8.5.min.js"></script>
+    <script src="js.js"></script>
+</head>
+<body>
+<div class="container">
+
+    <form id="chat-form">
+        <div class="row">
+            <div class="col-lg-2">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Your name">
+                </div>
+            </div>
+            <div class="col-lg-10">
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <input type="text" class="form-control" id="message" name="content" placeholder="What do you want to say?">
+                </div>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-success">Send</button>
+        <button id="ping-btn" class="btn btn-info">Ping</button>
+    </form>
+
+    <hr>
+
+    <h4>Messages</h4>
+    <ul id="messages">
+        <li>This is a message [18:00]</li>
+    </ul>
+
+</div>
+</body>
+</html>
